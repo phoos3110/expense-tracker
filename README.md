@@ -1,16 +1,38 @@
-# React + Vite
+# 💰 Expense Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Ứng dụng quản lý chi tiêu cá nhân được xây dựng với **React** và **Tailwind CSS**, giúp theo dõi các khoản chi một cách trực quan và nhanh chóng. Toàn bộ dữ liệu được lưu trên **localStorage**, không cần backend hay cơ sở dữ liệu.
 
-Currently, two official plugins are available:
+## ✨ Tính năng nổi bật
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- ➕ Thêm khoản chi với:
+  - Tên khoản chi
+  - Số tiền
+  - Danh mục (*Ăn uống, Di chuyển, Giải trí, Khác*)
+- 📅 Lọc chi tiêu theo:
+  - Tất cả
+  - Hôm nay
+  - Tuần này
+  - Tháng này
+- 💵 Hiển thị tổng số tiền đã chi theo bộ lọc hiện tại.
+- 📊 Biểu đồ tròn thống kê chi tiêu theo từng danh mục bằng **Recharts**.
+- 🗑️ Xóa khoản chi với hộp thoại xác nhận.
+- 💾 Tự động lưu dữ liệu bằng **localStorage**, giữ nguyên dữ liệu sau khi tải lại trang.
+- 🌙 Giao diện **Dark Mode** kết hợp hiệu ứng **Glassmorphism** hiện đại.
 
-## React Compiler
+## 🛠️ Công nghệ sử dụng
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ⚛️ React
+  - `useState`
+  - `useEffect`
+  - `useRef`
+- 🎨 Tailwind CSS
+- 📈 Recharts
+- ⚡ Vite
 
-## Expanding the Oxlint configuration
+## 🚀 Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+🌐 **Live Demo:** https://expense-tracker-pdp.vercel.app/
+
+## 📷 Giao diện
+
+<img width="1914" height="922" alt="image" src="https://github.com/user-attachments/assets/721431c2-1ed5-43de-82b0-f356c0fcd470" />
