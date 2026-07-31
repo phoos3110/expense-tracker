@@ -79,12 +79,7 @@ function App() {
         }}
       />
       <div className="absolute inset-0 bg-black/40 pointer-events-none" />
-      <div
-        className="absolute inset-0 opacity-20 pointer-events-none"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
-        }}
-      />
+      
       <div className="relative max-w-md lg:max-w-4xl mx-auto p-4 bg-black/30 backdrop-blur-xl border border-white/10 shadow-2xl rounded-2xl text-white">
         <h1 className="text-2xl font-bold text-center mb-6">Expense Tracker</h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
