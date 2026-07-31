@@ -34,5 +34,6 @@
 🌐 **Live Demo:** https://expense-tracker-pdp.vercel.app/
 
 ## 📷 Giao diện
+<img width="1916" height="918" alt="image" src="https://github.com/user-attachments/assets/259dca0f-6510-4171-8686-71b5b0d8b6ce" />
+<img width="1917" height="922" alt="image" src="https://github.com/user-attachments/assets/3ab4223c-be3e-4f50-9857-1b38f76a6b6c" />
 
-<img width="1914" height="922" alt="image" src="https://github.com/user-attachments/assets/721431c2-1ed5-43de-82b0-f356c0fcd470" />
