@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react"
 export default function CategoryDropdown({ categories, value, onChange }) {
   const [open, setOpen] = useState(false)
   const containerRef = useRef()
-  const selected = categories.find(c => c.value === value) || categories[0]
+  const selected = categories.find((c) => c.value === value) || categories[0]
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -31,15 +31,15 @@ export default function CategoryDropdown({ categories, value, onChange }) {
         onKeyDown={handleKeyDown}
         aria-haspopup="listbox"
         aria-expanded={open}
-        className="w-full flex items-center justify-between border border-white/20 rounded-lg px-3 py-2 bg-white/10 text-white focus:outline-none focus:border-blue-400 cursor-pointer"
+        className="w-full flex items-center justify-between border border-white/20 rounded-xl px-3 py-2.5 bg-white/10 text-white focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 cursor-pointer transition"
       >
-        <span>{selected.icon} {selected.label}</span>
+        <span className="truncate">{selected.icon} {selected.label}</span>
         <span className={`text-xs transition-transform ${open ? 'rotate-180' : ''}`}>▼</span>
       </button>
       {open && (
         <ul
           role="listbox"
-          className="absolute z-20 mt-1 w-full rounded-lg bg-zinc-900/95 backdrop-blur-xl border border-white/10 shadow-2xl overflow-hidden"
+          className="absolute z-20 mt-1 w-full max-h-56 overflow-y-auto rounded-xl bg-zinc-900/95 backdrop-blur-xl border border-white/10 shadow-2xl p-1 animate-pop-in"
         >
           {categories.map((cat) => (
             <li
@@ -47,7 +47,7 @@ export default function CategoryDropdown({ categories, value, onChange }) {
               role="option"
               aria-selected={cat.value === value}
               onClick={() => { onChange(cat.value); setOpen(false) }}
-              className={`px-3 py-2 cursor-pointer hover:bg-white/20 transition list-none ${
+              className={`px-3 py-2 rounded-lg cursor-pointer hover:bg-white/15 transition list-none ${
                 cat.value === value ? 'bg-white/10' : ''
               }`}
             >
