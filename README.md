@@ -4,36 +4,43 @@
 
 ## ✨ Tính năng nổi bật
 
-- ➕ Thêm khoản chi với:
-  - Tên khoản chi
-  - Số tiền
-  - Danh mục (*Ăn uống, Di chuyển, Giải trí, Khác*)
-- 📅 Lọc chi tiêu theo:
-  - Tất cả
-  - Hôm nay
-  - Tuần này
-  - Tháng này
-- 💵 Hiển thị tổng số tiền đã chi theo bộ lọc hiện tại.
-- 📊 Biểu đồ tròn thống kê chi tiêu theo từng danh mục bằng **Recharts**.
-- 🗑️ Xóa khoản chi với hộp thoại xác nhận.
-- 💾 Tự động lưu dữ liệu bằng **localStorage**, giữ nguyên dữ liệu sau khi tải lại trang.
-- 🌙 Giao diện **Dark Mode** kết hợp hiệu ứng **Glassmorphism** hiện đại.
+### Quản lý khoản chi
+- ➕ Thêm khoản chi với tên, số tiền, danh mục, **ngày chi tiêu** và **ghi chú**.
+- ✏️ Chỉnh sửa khoản chi ngay tại danh sách.
+- 🗑️ Xoá khoản chi với hộp thoại xác nhận hiện đại (thay cho `window.confirm`).
+- 🔍 Tìm kiếm theo tên, ghi chú hoặc danh mục (không phân biệt dấu/hoa thường).
+- ↕️ Sắp xếp: mới nhất, cũ nhất, cao → thấp, thấp → cao.
+- 🏷️ Lọc theo danh mục + 8 danh mục chi tiêu phong phú.
+
+### Thống kê & biểu đồ
+- 📊 4 thẻ thống kê: tổng chi tiêu, số khoản chi, trung bình, danh mục lớn nhất.
+- 🍩 Biểu đồ tròn tỷ trọng theo danh mục (kèm bảng tỷ lệ %).
+- 📈 Biểu đồ cột xu hướng chi tiêu 7 ngày gần nhất.
+- 📅 Lọc theo: tất cả, hôm nay, tuần này, tháng này, năm nay.
+
+### Ngân sách & dữ liệu
+- 🎯 Đặt ngân sách hàng tháng, cảnh báo khi gần chạm hoặc vượt ngân sách.
+- ⬇️ Xuất dữ liệu ra **JSON** hoặc **CSV**.
+- ⬆️ Nhập dữ liệu từ file JSON (đã sao lưu).
+- 💾 Tự động lưu dữ liệu bằng **localStorage**, giữ nguyên sau khi tải lại trang.
+- 🔔 Thông báo toast khi thêm / sửa / xoá / xuất / nhập.
 
 ## 🛠️ Công nghệ sử dụng
 
-- ⚛️ React
-  - `useState`
-  - `useEffect`
-  - `useRef`
-- 🎨 Tailwind CSS
+- ⚛️ React (`useState`, `useEffect`, `useRef`, `useMemo`)
+- 🎨 Tailwind CSS (v4)
 - 📈 Recharts
-- ⚡ Vite
+- ⚡ Vite + vite-plugin-pwa
 
-## 🚀 Demo
+## 🚀 Chạy thử
 
-🌐 **Live Demo:** https://expense-tracker-pdp.vercel.app/
+```bash
+npm install
+npm run dev      # Chạy môi trường dev
+npm run build    # Build production
+npm run lint     # Kiểm tra code
+```
 
 ## 📷 Giao diện
-<img width="1916" height="918" alt="image" src="https://github.com/user-attachments/assets/259dca0f-6510-4171-8686-71b5b0d8b6ce" />
-<img width="1917" height="922" alt="image" src="https://github.com/user-attachments/assets/3ab4223c-be3e-4f50-9857-1b38f76a6b6c" />
 
+Giao diện Dark Mode + Glassmorphism, tối ưu cho cả mobile và desktop (responsive 2 cột trên màn hình lớn).
